@@ -10,7 +10,5 @@ public class Office {
 		Employee sundar=context.getBean("sundar",Employee.class);
 		System.out.println(sundar);
 		
-		Employee jeeva=context.getBean("jeeva",Employee.class);
-		System.out.println(jeeva);
 	}
 }
