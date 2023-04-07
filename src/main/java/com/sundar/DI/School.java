@@ -7,7 +7,7 @@ public class School {
 
 	public static void main(String[] args) {
 	    
-		ApplicationContext context=new ClassPathXmlApplicationContext("springIOC.xml");
+		 ApplicationContext context=new ClassPathXmlApplicationContext("springIOC.xml");
 	     Student sundar=context.getBean("sundar",Student.class);
 	     System.out.println(sundar);
 	     

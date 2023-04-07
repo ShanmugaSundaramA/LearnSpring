@@ -6,25 +6,51 @@
    xsi:schemaLocation = "http://www.springframework.org/schema/beans
    http://www.springframework.org/schema/beans/spring-beans-4.0.xsd">
    
-<bean id="sim" class="com.sundar.SpringIOC.Vodafone"></bean>
+    <bean id="sim" class="com.sundar.SpringIOC.Vodafone"></bean>
 
-<bean id="sundar" class="com.sundar.DI.Student">
-  <property name="id" value="1" ></property>
-  <property name="name" value="Sundar"></property>
-  <property name="std" value="12"></property>
-</bean>
+	<bean id="sundar" class="com.sundar.DI.Student">
+		<constructor-arg name="id" value="1" type="int"></constructor-arg>
+		<constructor-arg name="name" value="Sundar" type="java.lang.String"></constructor-arg>
+		<constructor-arg name="std" value="12" type="int"></constructor-arg>
+	</bean>
 
-<bean id="sabari" class="com.sundar.DI.Student">
-  <property name="id" value="2" ></property>
-  <property name="name" value="Sabari"></property>
-  <property name="std" value="12"></property>
-</bean>
+   <bean id="jeeva" class="com.sundar.DI.Student">
+		<constructor-arg name="id" value="1" type="int"></constructor-arg>
+		<constructor-arg name="name" value="Jeeva" type="java.lang.String"></constructor-arg>
+		<constructor-arg name="std" value="12" type="int"></constructor-arg>
+	</bean>
+     
+    <bean id="sabari" class="com.sundar.DI.Student">
+		<constructor-arg name="id" value="1" type="int"></constructor-arg>
+		<constructor-arg name="name" value="Sabari" type="java.lang.String"></constructor-arg>
+		<constructor-arg name="std" value="12" type="int" ></constructor-arg>
+	</bean>
+	
+	<bean id="mohan" class="com.sundar.DI.Student">
+		<constructor-arg name="id" value="1" type="int"></constructor-arg>
+		<constructor-arg name="name" value="Mohan" type="java.lang.String"></constructor-arg>
+	</bean>
+    
+<!--
+     
+	<bean id="sundar" class="com.sundar.DI.Student">
+	  <property name="id" value="1" ></property>
+	  <property name="name" value="Sundar"></property>
+	  <property name="std" value="12"></property>
+	</bean>
+	
+	<bean id="sabari" class="com.sundar.DI.Student">
+	  <property name="id" value="2" ></property>
+	  <property name="name" value="Sabari"></property>
+	  <property name="std" value="12"></property>
+	</bean>
+	
+	<bean id="jeeva" class="com.sundar.DI.Student">
+	  <property name="id" value="3" ></property>
+	  <property name="name" value="Jeeva"></property>
+	  <property name="std" value="12" type="int"></property>
+	</bean>  
 
-<bean id="jeeva" class="com.sundar.DI.Student">
-  <property name="id" value="3" ></property>
-  <property name="name" value="Jeeva"></property>
-  <property name="std" value="12"></property>
-</bean>
-
-
+-->
+     
 </beans>

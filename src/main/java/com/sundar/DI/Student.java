@@ -4,9 +4,21 @@ public class Student {
    
 	private int id;
     private String name;
-    private String std;
+    private int std;
    
-	public void setId(int id) {
+    public Student(int id, String name) {
+		this.id = id;
+		this.name = name;
+	}
+    
+    public Student(int id, String name, int std) {
+		this.id = id;
+		this.name = name;
+		this.std = std;
+	}
+
+/* 
+    public void setId(int id) {
 		this.id = id;
 	}
 
@@ -18,6 +30,7 @@ public class Student {
 		this.std = std;
 	}
 	
+*/
 	@Override
 	public String toString() {
 		return "Student [id=" + id + ", name=" + name + ", std=" + std + "]";
