@@ -5,9 +5,10 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 public class App 
 {
-    public static void main( String[] args )
+	public static void main( String[] args )
     {
-       Sim sim=new Vodafone();
+       ApplicationContext context =new ClassPathXmlApplicationContext("springIOC.xml");
+       Sim sim=(Sim) context.getBean("sim");
        sim.call();
        sim.data();
     }
