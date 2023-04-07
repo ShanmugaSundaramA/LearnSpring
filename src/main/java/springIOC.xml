@@ -8,4 +8,23 @@
    
 <bean id="sim" class="com.sundar.SpringIOC.Vodafone"></bean>
 
+<bean id="sundar" class="com.sundar.DI.Student">
+  <property name="id" value="1" ></property>
+  <property name="name" value="Sundar"></property>
+  <property name="std" value="12"></property>
+</bean>
+
+<bean id="sabari" class="com.sundar.DI.Student">
+  <property name="id" value="2" ></property>
+  <property name="name" value="Sabari"></property>
+  <property name="std" value="12"></property>
+</bean>
+
+<bean id="jeeva" class="com.sundar.DI.Student">
+  <property name="id" value="3" ></property>
+  <property name="name" value="Jeeva"></property>
+  <property name="std" value="12"></property>
+</bean>
+
+
 </beans>
