@@ -45,6 +45,29 @@
 	         </set>
 	     </constructor-arg>
 	</bean>
+	
+	<bean id="ans1" class="com.sundar.CollectionDI.Answer">
+		<constructor-arg name="id" value="101"></constructor-arg>
+		<constructor-arg name="name" value="Sundar"></constructor-arg>
+		<constructor-arg name="answer" value="java is a programing lang."></constructor-arg>
+	</bean>
+	
+    <bean id="ans2" class="com.sundar.CollectionDI.Answer">
+		<constructor-arg name="id" value="102"></constructor-arg>
+		<constructor-arg name="name" value="Jeeva"></constructor-arg>
+		<constructor-arg name="answer" value="java is a platform independent lang."></constructor-arg>
+	</bean>
+	
+	<bean id="que" class="com.sundar.CollectionDI.Question">
+		<constructor-arg name="quesNo" value="1"></constructor-arg>
+		<constructor-arg name="question" value="What is java"></constructor-arg>
+		<constructor-arg name="ans">
+		   <set>
+		   		<ref bean="ans1"/>
+		   		<ref bean="ans2"/>
+		   </set>
+		</constructor-arg>
+	</bean>
 <!--
 injection using setter method
      
