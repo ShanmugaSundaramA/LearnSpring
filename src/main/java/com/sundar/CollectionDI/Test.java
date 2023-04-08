@@ -12,5 +12,8 @@ public class Test {
 	   
 	   Question1M ques1=context.getBean("ques1",Question1M.class);
 	   ques1.display();
+	   
+	   Question2 ques2=context.getBean("ques2",Question2.class);
+	   ques2.display();
    }
 }

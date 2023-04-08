@@ -80,6 +80,32 @@
 	            </map>
 	     </constructor-arg>
 	</bean>
+	<bean id="student2.1" class="com.sundar.CollectionDI.Student2">
+		<constructor-arg name="id" value="101"></constructor-arg>
+		<constructor-arg name="name" value="Sundar"></constructor-arg>
+	</bean>
+	<bean id="student2.2" class="com.sundar.CollectionDI.Student2">
+		<constructor-arg name="id" value="102"></constructor-arg>
+		<constructor-arg name="name" value="Jeeva"></constructor-arg>
+	</bean>	
+	<bean id="answer2.1" class="com.sundar.CollectionDI.Answer2">
+	    <constructor-arg name="answer" value="He is a bodyBuilder"></constructor-arg>
+	    <constructor-arg name="postedDate" value="7/4/2022"></constructor-arg>
+	</bean>
+	<bean id="answer2.2" class="com.sundar.CollectionDI.Answer2">
+	    <constructor-arg name="answer" value="He is a Artist"></constructor-arg>
+	    <constructor-arg name="postedDate" value="6/4/2022"></constructor-arg>
+	</bean>
+	<bean  id="ques2" class="com.sundar.CollectionDI.Question2">
+	      <constructor-arg name="quesNo" value="1"></constructor-arg>
+	      <constructor-arg name="question" value="who is sundar"></constructor-arg>
+	      <constructor-arg name="ansAndStu">
+	      		<map>
+	      			<entry key-ref="student2.1" value-ref="answer2.1"></entry>
+	      			<entry key-ref="student2.2" value-ref="answer2.2"></entry>
+	      		</map>
+	      </constructor-arg>
+	</bean>
 <!--
 injection using setter method
      
