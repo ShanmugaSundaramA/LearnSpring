@@ -9,5 +9,8 @@ public class Test {
 	   
 	   Question ques=context.getBean("que",Question.class);
 	   ques.display();
+	   
+	   Question1M ques1=context.getBean("ques1",Question1M.class);
+	   ques1.display();
    }
 }

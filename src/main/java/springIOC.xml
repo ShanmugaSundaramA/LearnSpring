@@ -68,6 +68,18 @@
 		   </set>
 		</constructor-arg>
 	</bean>
+	
+	<bean id="ques1" class="com.sundar.CollectionDI.Question1M">
+	     <constructor-arg name="quesNo" value="1"></constructor-arg>
+	     <constructor-arg name="question" value="what is variable ?"></constructor-arg>
+	     <constructor-arg name="answer">
+	            <map>
+	               <entry key="sundar" value="name of value."></entry>
+	               <entry key="jeeva" value="three types."></entry>
+	               <entry key="sabari" value="local,instance,static"></entry>
+	            </map>
+	     </constructor-arg>
+	</bean>
 <!--
 injection using setter method
      
