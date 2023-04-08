@@ -9,7 +9,7 @@
 	
 	<bean id="address" class="com.sundar.ObjectDI.Address">
                <constructor-arg name="city" value="chennai" type="java.lang.String"></constructor-arg>
-               <constructor-arg name="state" value="tamilnadu" type="java.lang.String"></constructor-arg>
+               <constructor-arg name="state" value="tamilnadu " type="java.lang.String"></constructor-arg>
                <constructor-arg name="country" value="India" type="java.lang.String"></constructor-arg>
     </bean>
 	
@@ -20,6 +20,31 @@
       </constructor-arg>
 	</bean>
 	
+	<bean id="student" class="com.sundar.CollectionDI.Student">
+	    <property name="id" value="101"></property>
+	    <property name="name" value="Sundar"></property>
+	    <property name="hobby">
+	         <list>
+	             <value>study</value>
+	             <value>sleep</value>
+	             <value>draw</value>
+	             <value>gym</value> 
+	         </list>
+	    </property>
+	</bean>
+	
+	<bean id="emp" class="com.sundar.CollectionDI.Employee">
+	     <constructor-arg name="id" value="1"></constructor-arg>
+	     <constructor-arg name="name" value="Venkat"></constructor-arg>
+	     <constructor-arg name="role">
+	         <set>
+	              <value>HTML</value>
+	              <value>CSS</value>
+	              <value>JS</value>
+	              <value>HTML</value>
+	         </set>
+	     </constructor-arg>
+	</bean>
 <!--
 injection using setter method
      
@@ -42,7 +67,7 @@ injection using setter method
 	</bean>
 	
 	
-		<bean id="sundar" class="com.sundar.DI.Student">
+    <bean id="sundar" class="com.sundar.DI.Student">
 		<constructor-arg name="id" value="1" type="int"></constructor-arg>
 		<constructor-arg name="name" value="Sundar" type="java.lang.String"></constructor-arg>
 		<constructor-arg name="std" value="12" type="int"></constructor-arg>
@@ -50,7 +75,7 @@ injection using setter method
 
 injection using constructor.
 
-   <bean id="jeeva" class="com.sundar.DI.Student">
+    <bean id="jeeva" class="com.sundar.DI.Student">
 		<constructor-arg name="id" value="1" type="int"></constructor-arg>
 		<constructor-arg name="name" value="Jeeva" type="java.lang.String"></constructor-arg>
 		<constructor-arg name="std" value="12" type="int"></constructor-arg>
@@ -68,16 +93,16 @@ injection using constructor.
 	</bean>  
 	
     <bean id="jeeva" class="com.sundar.ObjectDI.Employee">
-      <constructor-arg name="name" value="jeeva" type="java.lang.String"></constructor-arg>
-      <constructor-arg name="id" value="102" type="int"></constructor-arg>
-      <constructor-arg name="address">
-          <bean class="com.sundar.ObjectDI.Address">
-               <constructor-arg name="city" value="bangalore" type="java.lang.String"></constructor-arg>
-               <constructor-arg name="state" value="telungana" type="java.lang.String"></constructor-arg>
-               <constructor-arg name="country" value="India" type="java.lang.String"></constructor-arg>
-          </bean>
-      </constructor-arg>
-	</bean>
+       <constructor-arg name="name" value="jeeva" type="java.lang.String"></constructor-arg>
+       <constructor-arg name="id" value="102" type="int"></constructor-arg>
+       <constructor-arg name="address">
+           <bean class="com.sundar.ObjectDI.Address">
+                <constructor-arg name="city" value="bangalore" type="java.lang.String"></constructor-arg>
+                <constructor-arg name="state" value="telungana" type="java.lang.String"></constructor-arg>
+                <constructor-arg name="country" value="India" type="java.lang.String"></constructor-arg>
+           </bean>
+       </constructor-arg>
+    </bean>
     
 <
 -->
