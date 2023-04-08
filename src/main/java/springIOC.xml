@@ -106,6 +106,23 @@
 	      		</map>
 	      </constructor-arg>
 	</bean>
+	
+	<bean id="address1" class="com.sundar.CollectionDI.Address1">
+	      <constructor-arg name="city" value="chennai"></constructor-arg>
+	      <constructor-arg name="state" value="tamilnadu"></constructor-arg>
+	      <constructor-arg name="country" value="india"></constructor-arg>
+	</bean>
+	
+	<bean id="employee1" class="com.sundar.CollectionDI.Employee1">
+	      <constructor-arg name="id" value="1001"></constructor-arg>
+	      <constructor-arg name="name" value="Sundaram"></constructor-arg>
+	</bean>
+	
+	<bean id="employee2" class="com.sundar.CollectionDI.Employee1" parent="employee1">
+	      <constructor-arg name="address" ref="address1"></constructor-arg>
+	</bean>
+	
+	
 <!--
 injection using setter method
      

@@ -15,5 +15,8 @@ public class Test {
 	   
 	   Question2 ques2=context.getBean("ques2",Question2.class);
 	   ques2.display();
+	   
+	   Employee1 emp=context.getBean("employee2",Employee1.class);
+	   System.out.println(emp);
    }
 }
