@@ -1,6 +1,7 @@
 package com.sundar.AutoWiring;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 
 public class Bike {
 	private Engine engine;
@@ -15,6 +16,7 @@ public class Bike {
 	}
     
 	@Autowired
+	@Qualifier("engine1")
 	public void setEngine(Engine engine) {
 		this.engine = engine;
 		System.out.println("setter method is called.");
