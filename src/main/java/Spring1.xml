@@ -9,9 +9,16 @@
            http://www.springframework.org/schema/context/spring-context-3.0.xsd">
   <context:annotation-config />
       
-      <bean id="engine" class="com.sundar.AutoWiring.Engine"></bean>
+      <bean id="engine" class="com.sundar.AutoWiring.Engine">
+      <constructor-arg name="colour" value="Black"></constructor-arg>
+      </bean>
       
-      <bean id="bike" class="com.sundar.AutoWiring.Bike" autowire="byName">
+      <bean id="engine1" class="com.sundar.AutoWiring.Engine">
+      <constructor-arg name="colour" value="Silver"></constructor-arg>
+      </bean>
+      
+      
+      <bean id="bike" class="com.sundar.AutoWiring.Bike" autowire="constructor">
       </bean>
       
       
