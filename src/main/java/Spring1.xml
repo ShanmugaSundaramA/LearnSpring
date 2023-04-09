@@ -23,9 +23,6 @@
       </bean>
       
       <bean id="sundar" class="com.sundar.PropertyFile.Student">
-      <property name="id" value="${student.id}" />
-      <property name="name" value="${student.name}" />
-      <property name="std" value="${student.std}"/>
       </bean>
       
  </beans>
