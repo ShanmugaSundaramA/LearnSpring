@@ -11,8 +11,7 @@
       
       <bean id="engine" class="com.sundar.AutoWiring.Engine"></bean>
       
-      <bean id="bike" class="com.sundar.AutoWiring.Bike">
-          <property name="engine" ref="engine" />
+      <bean id="bike" class="com.sundar.AutoWiring.Bike" autowire="byName">
       </bean>
       
       
