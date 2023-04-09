@@ -1,3 +1,8 @@
 student.id=101
 student.name=Sundaram
 student.std=12th
+
+mysql.driver=com.mysql.cj.jdbc.Driver
+mysql.userName=root
+mysql.password=Sundar0129Sowmiya
+mysql.url=jdbc:mysql://localhost:3306/sundar
