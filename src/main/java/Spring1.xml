@@ -10,7 +10,6 @@
            
       <context:annotation-config />
       <context:property-placeholder location="classpath:student-info-property"/>
- 	  <context:component-scan base-package="com.sundar.AnnotationPractice"/>
  	  
       <bean id="db" class="com.sundar.PropertyFile.DBConnection"></bean>
       
