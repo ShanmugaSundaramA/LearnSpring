@@ -8,9 +8,22 @@ import org.springframework.context.annotation.Configuration;
 //@ComponentScan(basePackages = "com.sundar.AnnotationPractice")
 public class CollegeConfig {
 
-	@Bean(name={"student","student1","student2"})
+	@Bean
+	public Principal principal() {
+		return new Principal();
+	}
+	
+	@Bean
+	public Teacher teacher() {
+		return new MathsTeacher();
+	}
+	
+	@Bean
 	public Student student() {
-		return new Student();
+		Student student=new Student();
+		student.setPrincipal(principal());
+		student.setTeacher(teacher());
+		return student;
 	}
 }
  
